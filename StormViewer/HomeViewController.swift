@@ -7,16 +7,25 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class HomeViewController: UITableViewController {
     var pictures = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupView()
+    }
+    
+    private func setupView() {
+        setupNavigation()
+        loadImages()
+    }
+    
+    private func setupNavigation() {
         title = "Storm Viewer"
-        
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+    }
+    
+    private func loadImages() {
         let fileManager = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fileManager.contentsOfDirectory(atPath: path)
