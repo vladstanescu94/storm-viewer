@@ -81,8 +81,7 @@
 		DE506EF025A5E4F2005B858B /* StormViewer */ = {
 			isa = PBXGroup;
 			children = (
-				DE506EF125A5E4F2005B858B /* AppDelegate.swift */,
-				DE506EF325A5E4F2005B858B /* SceneDelegate.swift */,
+				DE506F2225A5FAE0005B858B /* AppDelegate */,
 				DE506EF525A5E4F2005B858B /* ViewController.swift */,
 				DE506F1F25A5F079005B858B /* DetailViewController.swift */,
 				DE506EF725A5E4F2005B858B /* Main.storyboard */,
@@ -109,6 +108,15 @@
 				DE506F1325A5EAFC005B858B /* nssl0034.jpg */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		DE506F2225A5FAE0005B858B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DE506EF125A5E4F2005B858B /* AppDelegate.swift */,
+				DE506EF325A5E4F2005B858B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
