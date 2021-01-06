@@ -15,15 +15,23 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Image \(selectedImageIndex) of \(totalImagesCount)"
-        
-        navigationItem.largeTitleDisplayMode = .never
-        
+        setupView()
+    }
+    
+    private func setupView() {
+        setupNavigation()
+        createImageFromPath()
+    }
+    
+    private func createImageFromPath() {
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
         }
-        
+    }
+    
+    private func setupNavigation() {
+        title = "Image \(selectedImageIndex) of \(totalImagesCount)"
+        navigationItem.largeTitleDisplayMode = .never
     }
     
     override func viewWillAppear(_ animated: Bool) {
